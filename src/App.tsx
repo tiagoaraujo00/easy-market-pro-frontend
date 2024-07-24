@@ -1,3 +1,11 @@
+import logo from '../src/assets/logo/easymarket-logo-final.svg'
+
 export function App() {
-  return <div className="bg-red-800">oii</div>;
+  return (
+    <header>
+      <div>
+        <img src={logo} alt="logo" width={150} height={150} />
+      </div>
+    </header>
+  )
 }

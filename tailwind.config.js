@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         sans: "Space Grotesk",
       },
+      colors: {
+        primary_green: "#B9FF66",
+        primary_dark: "#191A23",
+      },
     },
   },
   plugins: [],

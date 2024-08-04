@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer utilities {
+  .nav-link {
+    @apply relative font-normal text-zinc-900 cursor-pointer;
+  }
+  .nav-link::after {
+    @apply absolute w-[0%] h-0.5 bg-orange-500 -bottom-1 left-0 rounded-xl duration-300;
+    content: '';
+  }
+  .nav-link:hover::after {
+    @apply w-full;
+  }
+}
 
 * {
   min-width: 0;

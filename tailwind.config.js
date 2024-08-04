@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: "Roboto",
+        sans: "Space Grotesk",
       },
     },
   },

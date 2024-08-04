@@ -1,11 +1,16 @@
-import logo from '../src/assets/logo/easymarket-logo-final.svg'
+import { Container } from "./components/Container/Container";
+import Header from "./components/Header/Header";
+import { Hero } from "./components/Hero/Hero";
+import { Services } from "./components/Services/Services";
 
 export function App() {
   return (
-    <header>
-      <div>
-        <img src={logo} alt="logo" width={150} height={150} />
-      </div>
-    </header>
-  )
+    <div className="w-screen h-screen">
+      <Container>
+        <Header />
+        <Hero />
+        <Services />
+      </Container>
+    </div>
+  );
 }

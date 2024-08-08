@@ -2,7 +2,7 @@ import hero from '../../assets/images/hero-img.svg';
 
 export function Hero() {
   return (
-    <section className="items-start w-full mt-16 mb-10 space-y-8 md:justify-between md:flex md:mb-20">
+    <section className="items-start mt-16 mb-10 space-y-8 md:justify-between md:flex md:mb-16">
       <div className="md:w-[48%] space-y-9">
         <h1 className="text-5xl font-bold text-zinc-900">
           A Tecnolgia que impulsiona seu negócio!

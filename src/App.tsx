@@ -5,7 +5,7 @@ import { Services } from "./components/Services/Services";
 
 export function App() {
   return (
-    <div className="w-screen h-screen">
+    <div className="h-screen">
       <Container>
         <Header />
         <Hero />

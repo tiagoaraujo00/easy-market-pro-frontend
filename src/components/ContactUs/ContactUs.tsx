@@ -9,7 +9,7 @@ export default function ContactUs() {
           Fale Conosco: <br /> Vamos conversar sobre as Soluções para o Seu Negócio
         </p>
       </div>
-      <form action="" className=""></form>
+      <form className=""></form>
     </section>
   );
 }

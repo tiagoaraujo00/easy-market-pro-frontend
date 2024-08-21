@@ -82,7 +82,7 @@ export default function ContactUs() {
                 type="text"
                 name="nome"
                 id="nome"
-                className="p-1 border border-black rounded-md outline-none"
+                className="p-1 py-2 border border-black rounded-md outline-none"
               />
             </label>
             <label htmlFor="email" className="flex flex-col">
@@ -91,7 +91,7 @@ export default function ContactUs() {
                 type="text"
                 name="email"
                 id="email"
-                className="p-1 border border-black rounded-md outline-none"
+                className="p-1 py-2 border border-black rounded-md outline-none"
               />
             </label>
             <label htmlFor="duvida" className="flex flex-col">

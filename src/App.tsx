@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import { Hero } from "./components/Hero/Hero";
 import { Services } from "./components/Services/Services";
 import ContactUs from "./components/ContactUs/ContactUs";
+import Footer from "./components/Footer/Footer";
 
 export function App() {
   return (
@@ -14,6 +15,7 @@ export function App() {
         <Services />
         <CaseStudies />
         <ContactUs />
+        <Footer />
       </Container>
     </div>
   );

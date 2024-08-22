@@ -57,8 +57,8 @@ export default function Footer() {
           </form>
         </div>
       </div>
-      <div className="h-px my-8 rounded-lg bg-zinc-400" />
-      <div className="flex justify-between text-zinc-100">
+      <div className="h-[2px] my-8 rounded-lg bg-zinc-400" />
+      <div className="flex justify-between pb-8 text-zinc-100">
         <p>© 2023 Positivus. All Rights Reserved.</p>
         <p>Privacy Policy</p>
       </div>

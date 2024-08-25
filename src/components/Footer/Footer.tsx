@@ -2,6 +2,8 @@ import linkedin from "../../assets/images/linkedin.svg";
 import x from "../../assets/images/x.svg";
 import { Facebook } from "lucide-react";
 import logoWhite from "../../assets/logo/easyMarketWhite.png";
+import Button from "../Button/Button";
+import Title from "../Title/Title";
 
 export default function Footer() {
   return (
@@ -32,9 +34,7 @@ export default function Footer() {
       </div>
       <div className="flex justify-between">
         <div className="space-y-5 text-zinc-200">
-          <h3 className="self-center px-3 py-2 text-2xl font-semibold rounded-lg max-w-fit bg-primary_green text-zinc-900">
-            Entre em contato
-          </h3>
+          <Title>Entre em contato</Title>
           <p>Email: info@easymarket.com.br</p>
           <p>Telefone: (xx) xxxx-xxxx</p>
           <p>
@@ -49,11 +49,11 @@ export default function Footer() {
               type="text"
               name="news"
               id="news"
-              className="p-2 px-8 bg-transparent border-2 rounded-md outline-none border-zinc-200"
+              className="p-2 px-8 text-lg bg-transparent border-2 rounded-md outline-none text-zinc-200 border-zinc-200"
             />
-            <button type="submit" className="p-2 rounded-md bg-primary_green">
+            <Button type="submit"variant="secondary" size="small">
               Receba notícias no seu Email
-            </button>
+            </Button>
           </form>
         </div>
       </div>

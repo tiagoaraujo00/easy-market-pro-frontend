@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import logo from "../../assets/logo/easymarket-logo-final.svg";
 import { useState } from "react";
+import Button from "../Button/Button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,12 +28,7 @@ export default function Header() {
           >
             Login
           </button>
-          <button
-            type="button"
-            className="p-4 text-xl border-2 border-black rounded-xl text-zinc-100 bg-zinc-900 hover:bg-zinc-800"
-          >
-            Cadastre-se
-          </button>
+          <Button>Cadastre-se</Button>
         </div>
         <button type="button" className="md:hidden" onClick={handleMenu}>
           <Menu />

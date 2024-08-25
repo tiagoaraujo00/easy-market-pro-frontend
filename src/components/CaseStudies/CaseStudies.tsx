@@ -1,10 +1,10 @@
+import Title from "../Title/Title";
+
 export function CaseStudies() {
   return (
     <section className="mt-20">
       <div className="flex flex-col gap-6 mb-5 md:flex-row">
-        <h2 className="self-center px-3 py-2 text-2xl font-semibold rounded-lg max-w-fit bg-primary_green text-zinc-900">
-          Impacto
-        </h2>
+        <Title>Impacto</Title> 
         <p className="text-zinc-900 md:w-[50%]">
           Descubra Exemplos Reais do Nosso Sucesso Comprovado com Pequenos
           Varejistas através de Nossos Estudos de Caso

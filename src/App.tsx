@@ -8,7 +8,7 @@ import Footer from "./components/Footer/Footer";
 
 export function App() {
   return (
-    <div className="h-screen">
+    <>
       <Container>
         <Header />
         <Hero />
@@ -17,6 +17,6 @@ export function App() {
         <ContactUs />
         <Footer />
       </Container>
-    </div>
+    </>
   );
 }

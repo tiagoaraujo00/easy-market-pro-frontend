@@ -19,11 +19,11 @@ export function ServiceCard({
       className={`flex items-center gap-8 p-9 ${bgColor} rounded-3xl border border-black shadow-[0px_5px_0px_0px_black]`}
     >
       <div className="flex flex-col justify-between w-1/2 h-full">
-        <h3
+        <p
           className={`p-1 text-xl font-semibold text-black rounded-md ${titleBgColor} max-w-fit`}
         >
           {title}
-        </h3>
+        </p>
         <button className="flex items-center gap-3 max-w-fit">
           <ArrowUpRight
             size={30}

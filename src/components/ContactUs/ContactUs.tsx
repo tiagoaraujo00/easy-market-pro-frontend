@@ -1,12 +1,12 @@
 import mainFormimg from "../../assets/images/main-form-img.svg";
+import Button from "../Button/Button";
+import Title from "../Title/Title";
 
 export default function ContactUs() {
   return (
     <section className="mt-20">
       <div className="flex flex-col items-center gap-6 mb-5 md:flex-row">
-        <h2 className="self-center px-3 py-2 text-2xl font-semibold rounded-lg max-w-fit bg-primary_green text-zinc-900">
-          Fale conosco
-        </h2>
+        <Title>Fale Conosco</Title>
         <p className="text-zinc-900 md:w-[50%]">
           Fale Conosco: <br /> Vamos conversar sobre as Soluções para o Seu
           Negócio
@@ -103,12 +103,11 @@ export default function ContactUs() {
                 className="p-1 border border-black rounded-lg outline-none resize-none"
               ></textarea>
             </label>
-            <button
+            <Button
               type="submit"
-              className="w-full py-4 text-xl font-normal rounded-lg text-zinc-200 bg-zinc-900"
             >
               Enviar
-            </button>
+            </Button>
           </div>
         </form>
         <div className="overflow-x-hidden translate-x-7">

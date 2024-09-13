@@ -2,6 +2,7 @@ import { Menu } from "lucide-react";
 import logo from "../../assets/logo/easymarket-logo-final.svg";
 import { useState } from "react";
 import Button from "../Button/Button";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,13 +23,17 @@ export default function Header() {
           <div className="nav-link">Contato</div>
         </nav>
         <div className="hidden md:flex md:gap-8">
-          <button
-            type="button"
-            className="text-xl text-zinc-900 hover:text-zinc-700"
-          >
-            Login
-          </button>
-          <Button>Cadastre-se</Button>
+          <Link to="/login" className="flex items-center justify-center">
+            <button
+              type="button"
+              className="text-xl text-zinc-900 hover:text-zinc-700"
+            >
+              Login
+            </button>
+          </Link>
+          <Link to="/cadastro">
+            <Button>Cadastre-se</Button>
+          </Link>
         </div>
         <button type="button" className="md:hidden" onClick={handleMenu}>
           <Menu />

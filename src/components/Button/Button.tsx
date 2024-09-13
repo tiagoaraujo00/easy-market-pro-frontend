@@ -11,7 +11,11 @@ const buttonVariants = tv({
     size: {
       default: "w-full",
       middle: "w-[50%]",
-      small: "p-2"
+      small: "p-2",
+    },
+    disabled: {
+      true: "cursor-not-allowed opacity-60",
+      false: "",
     },
   },
   defaultVariants: {
@@ -30,9 +34,9 @@ export default function Button({
   variant,
   size,
   ...props
-}: ButtonProps) {
+}: Readonly<ButtonProps>) {
   return (
-    <button {...props} className={buttonVariants({ variant, size })}>
+    <button {...props} className={buttonVariants({ variant, size })} >
       {children}
     </button>
   );

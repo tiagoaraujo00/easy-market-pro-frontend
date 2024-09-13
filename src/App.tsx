@@ -1,22 +1,33 @@
-import { CaseStudies } from "./components/CaseStudies/CaseStudies";
-import { Container } from "./components/Container/Container";
-import Header from "./components/Header/Header";
-import { Hero } from "./components/Hero/Hero";
-import { Services } from "./components/Services/Services";
-import ContactUs from "./components/ContactUs/ContactUs";
-import Footer from "./components/Footer/Footer";
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
+import LandingPage from "./pages/LandingPage";
+import Login from "./pages/Login";
+import Cadastro from "./pages/Cadastro";
+import ControlPanel from "./pages/ControlPanel";
 
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <LandingPage />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/cadastro",
+    element: <Cadastro />,
+  },
+  {
+    path: "/dashboard",
+    element: <ControlPanel />,
+  }
+]);
 export function App() {
   return (
-    <>
-      <Container>
-        <Header />
-        <Hero />
-        <Services />
-        <CaseStudies />
-        <ContactUs />
-        <Footer />
-      </Container>
-    </>
+    <RouterProvider router={router} />
   );
 }

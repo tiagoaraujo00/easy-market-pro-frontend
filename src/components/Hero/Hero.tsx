@@ -6,10 +6,6 @@ import { X } from "lucide-react";
 export function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
-  const closeModal = () => {
-    setIsOpen(false);
-  };
-
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -47,7 +43,7 @@ export function Hero() {
                 <div className="flex items-center justify-between mb-5">
                   <h2 className="text-lg font-bold">Agende um horário</h2>
                   <div className="flex items-center justify-center p-1 border-2 rounded-md border-primary_dark">
-                    <button type="button" onClick={closeModal}>
+                    <button type="button" onClick={() => setIsOpen(false)}>
                       <X className="size-5 text-primary_dark" />
                     </button>
                   </div>

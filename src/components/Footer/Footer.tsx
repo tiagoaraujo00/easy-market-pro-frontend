@@ -49,9 +49,9 @@ export default function Footer() {
               type="text"
               name="news"
               id="news"
-              className="p-2 px-8 text-lg bg-transparent border-2 rounded-md outline-none text-zinc-200 border-zinc-200"
+              className="p-3 px-8 text-lg bg-transparent border-2 rounded-md outline-none text-zinc-200 border-zinc-200"
             />
-            <Button type="submit"variant="secondary" size="small">
+            <Button type="submit" variant="secondary" className="p-2">
               Receba notícias no seu Email
             </Button>
           </form>

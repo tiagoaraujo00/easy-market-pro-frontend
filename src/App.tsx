@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage";
 import Login from "./pages/Login";
 import Cadastro from "./pages/Cadastro";
 import ControlPanel from "./pages/ControlPanel";
+import GasWater from "./components/GasWater/GasWater";
 
 
 const router = createBrowserRouter([
@@ -24,6 +25,12 @@ const router = createBrowserRouter([
   {
     path: "/dashboard",
     element: <ControlPanel />,
+    children: [
+      {
+        path: "gaseagua",
+        element: <GasWater />,
+      }
+    ],
   }
 ]);
 export function App() {
